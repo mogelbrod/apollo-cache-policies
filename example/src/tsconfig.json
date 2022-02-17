@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "allowJs": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true
+  }
+}
