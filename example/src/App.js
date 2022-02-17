@@ -34,7 +34,7 @@ const cache = new InvalidationPolicyCache({
           return existing || toReference({ id: args.id })
         },
         // Returns a relay-style paginated list of items
-        allFilms: relayStylePagination(["after"])
+        allFilms: relayStylePagination(["first", "after"])
       }
     }
   },
@@ -166,6 +166,7 @@ function Film() {
     notifyOnNetworkStatusChange: true,
     returnPartialData: true,
   })
+  console.log(queryList.data?.allFilms.edges.map(x => x.node.title.substr(0, 10)))
   return (
     <>
       <p>
